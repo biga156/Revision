@@ -1,31 +1,5 @@
 <?php
-$tab=[] ;
 
-if (isset($_POST["submit"])) {
-		
-	
-	if ($ressource = fopen("contacts2.txt", "a")) {
-        fwrite($ressource,$_POST['firstName'] . "\n");
-        fwrite($ressource,$_POST['lastName'] . "\n");
-        fwrite($ressource,$_POST['adresse'] . "\n");
-		fwrite($ressource,"\n");
-        fclose($ressource);
-        header("location: contacts.php");
-	} else {
-		echo "ERROR";
-	}
-	
-  
-
-}  else if (isset($_POST["vendre"])) {
-    header("location: vendre.php");
-}else if (isset($_POST["acheter"])) {
-    header("location: acheter.php");
-}else if (isset($_POST["louer"])) {
-    header("location: louer.php");
-}
-
-$ressource = fopen("contacts2.txt", "r");
 
 ?>
 
@@ -35,9 +9,10 @@ $ressource = fopen("contacts2.txt", "r");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo</title>
+    <title>Contacts</title>
 </head>
 <body>
+    <h1>Contacts</h1>
 	
    
     <table>
