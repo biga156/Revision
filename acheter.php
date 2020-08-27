@@ -1,4 +1,6 @@
-
+<?php
+$ressource = fopen("acheter.txt", "r");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

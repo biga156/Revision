@@ -24,6 +24,14 @@ create table produits (
 )engine=innodb;
 
 
+drop table if exists acheter;
+create table acheter (
+	ach_id int not null auto_increment primary key,
+	ach_numero int,
+	ach_type varchar (50),
+	ach_caracter varchar(100),
+	pro_adresse varchar(100)
+)engine=innodb;
 
 
 
@@ -40,4 +48,7 @@ insert into produits values (2,'bien2', 'caracteristique2','adresse2');
 insert into produits values (3,'bien3', 'caracteristique3','adresse3');
 
 
+insert into acheter values (1,'1','type1', 'caracteristique1','adresse1');
+insert into acheter values (2,'2', 'type2','caracteristique2','adresse2');
+insert into acheter values (3,'3','type3', 'caracteristique3','adresse3');
 
