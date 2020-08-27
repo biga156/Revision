@@ -5,9 +5,6 @@ $sql="select * from contacts ";
 $result=$link->query($sql);
 $data=$result->fetchAll(PDO::FETCH_ASSOC);
 
-if (isset($_POST["add"])) {
-
-}
 
 if (isset($_POST["add"])) {
     extract($_POST);  
