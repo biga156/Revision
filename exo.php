@@ -75,6 +75,8 @@ $ressource = fopen("contacts2.txt", "r");
                     <?php  if($counter>3){?>
                     </tr> 
                     <tr><?php
+
+                    
                     $counter=1; } ?>
                     </tr>
 			<?php } ?>
