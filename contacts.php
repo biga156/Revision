@@ -4,6 +4,9 @@ $contacts['firstName'] = ['Prenom1', 'Prenom2', 'Prenom3'];
 $contacts['lastName'] = ['Nom1', 'Nom2', 'Nom3'];
 $contacts['adresse'] = ['Adresse1', 'Adresse2', 'Adresse3'];
 
+if (isset($_POST["add"])) {
+
+}
 ?>
 
 <!DOCTYPE html>

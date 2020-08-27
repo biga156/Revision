@@ -1,5 +1,7 @@
 <?php
 
+require "_include/inc_config.php";
+
 
 if (isset($_POST["submit"])) {
     header("location: contacts.php");
