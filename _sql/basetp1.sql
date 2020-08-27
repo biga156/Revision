@@ -30,7 +30,7 @@ create table acheter (
 	ach_numero int,
 	ach_type varchar (50),
 	ach_caracter varchar(100),
-	pro_adresse varchar(100)
+	ach_adresse varchar(100)
 )engine=innodb;
 
 
