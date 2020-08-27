@@ -27,7 +27,7 @@
 		<?php
 			
 			$tab=file('contacts2.txt');
-            //var_dump($tab);
+            
             
             /*$counter = 1;
 	        while ($line = fgets($ressource)) {
@@ -52,15 +52,18 @@
                     <?php
                     $counter=1;
                     for($i=0; $i<count($tab); $i++){
-                     ?><td><?= $tab[$i] ?></td>
-                    <?php  if($counter>3){?>
-                    </tr> 
-                    <tr><?php
-
-
+                     ?><td><?= $tab[$i] ?>
+                     
+                    <?php 
+                    $counter++;
+                    if($counter>3){?>
+                    </td> 
+                    <?php
                     $counter=1; } ?>
                     </tr>
-			<?php } ?>
+                    
+            <?php } ?>
+            <br>
     </table>
     
 </body>
