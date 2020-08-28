@@ -1,7 +1,7 @@
 <?php
 
 require "_include/inc_config.php";
-
+//test for commit
 
 if (isset($_POST["submit"])) {
     header("location: contacts.php");
